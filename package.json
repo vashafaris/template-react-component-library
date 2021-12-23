@@ -1,0 +1,28 @@
+{
+  "name": "alex-eagleson-component-lib",
+  "version": "0.0.1",
+  "description": "A react component library",
+  "scripts": {
+    "rollup": "rollup -c"
+  },
+  "keywords": [],
+  "author": "Vasha Faris",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.1",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/react": "^17.0.37",
+    "react": "^17.0.2",
+    "rollup": "^2.61.1",
+    "rollup-plugin-dts": "^4.0.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
+}
