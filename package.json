@@ -1,28 +1,50 @@
 {
-  "name": "alex-eagleson-component-lib",
-  "version": "0.0.1",
+  "name": "@vashafaris/template-react-component-library",
+  "version": "0.0.3",
   "description": "A react component library",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Vasha Faris",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.1",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.3",
     "@types/react": "^17.0.37",
-    "react": "^17.0.2",
+    "babel-jest": "^27.4.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.4.5",
     "rollup": "^2.61.1",
     "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
     "tslib": "^2.3.1",
     "typescript": "^4.5.4"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/vashafaris"
+  },
+  "dependencies": {
+    "postcss": "^8.4.5",
+    "react-test-renderer": "^17.0.2"
+  }
 }
