@@ -1,6 +1,6 @@
 {
   "name": "@vashafaris/template-react-component-library",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A react component library",
   "scripts": {
     "rollup": "rollup -c",
@@ -25,24 +25,34 @@
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
+    "@storybook/builder-webpack5": "^6.4.9",
+    "@storybook/manager-webpack5": "^6.4.9",
+    "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.4.9",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.3",
     "@types/react": "^17.0.37",
     "babel-jest": "^27.4.5",
     "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
     "husky": "^7.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.5",
     "lint-staged": "^12.1.4",
+    "node-sass": "^7.0.0",
     "prettier": "^2.5.1",
     "rollup": "^2.61.1",
     "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^3.0.0",
     "rollup-plugin-terser": "^7.0.2",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
     "tslib": "^2.3.1",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "postcss": "^8.4.5",
+    "react-test-renderer": "^17.0.2"
   },
   "peerDependencies": {
     "react": "^17.0.2"
@@ -55,10 +65,6 @@
   "types": "dist/index.d.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/vashafaris"
-  },
-  "dependencies": {
-    "postcss": "^8.4.5",
-    "react-test-renderer": "^17.0.2"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,html,css,json}": [
